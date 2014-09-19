@@ -40,7 +40,9 @@ def download_picture():
 	
 	if validpath != '':
 		os.system('gsettings set org.gnome.desktop.background picture-uri "%s"' % (validpath))
-	schedule.enter(20, 0, download_picture, ())
+		schedule.enter(60 * 60 * 12, 0, download_picture, ())
+	else:
+		schedule.enter(60 * 60, 0, download_picture, ())
 
 download_picture()
 schedule.run()
