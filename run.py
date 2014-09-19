@@ -6,6 +6,7 @@ import os.path as op
 import time, sched
 
 schedule = sched.scheduler(time.time, time.sleep)
+basedir = '/tmp/'
 
 def download_picture():
 	for i in range(8, -1, -1):
@@ -15,7 +16,7 @@ def download_picture():
 		root = ET.fromstring(xmlresponse)
 
 		datestr = root[0].text
-		imgpath = '%s.jpg' % (datestr)
+		imgpath = op.join(basedir, '%s.jpg' % (datestr))
 		if not op.exists(imgpath):
 			imgurl = root[6].text
 			imgdata = urllib2.urlopen(imgurl).read()
