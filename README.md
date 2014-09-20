@@ -1,6 +1,6 @@
 # cleanBingDesktop
 
-This project downloads 9 latest wallpapers fron Microsoft's Bing Desktop server and set the latest one as your desktop background.
+This project downloads wallpapers fron Microsoft's Bing Desktop server and set the latest one as your desktop background. I started this to get rid of some stupid bugs of the official BingDesktop.
 
 ## Run-time system
 
@@ -40,4 +40,6 @@ and the cript will check for latest wallpapers every two hours.
 
 If you want the script to run automatically on Windows, add the following command into Windows Task Scheduler.
 
-	<absolute path for python>python.exe <absolute path for this project>\change_wallpaper.py
+	C:\Users\Bo\cleanbingdesktop\run.bat
+
+and the script will run at the time you set.
