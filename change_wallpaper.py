@@ -37,6 +37,7 @@ def download_picture():
 			validpath = imgpath
 	
 	if validpath != '':
-		os.system('gsettings set org.gnome.desktop.background picture-uri "%s"' % (validpath))
+		print validpath
+		os.system('DISPLAY=:0 gsettings set org.gnome.desktop.background picture-uri "%s"' % (validpath))
 
 download_picture()
