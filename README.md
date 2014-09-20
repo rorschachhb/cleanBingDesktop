@@ -4,7 +4,7 @@ This project downloads 9 latest wallpapers fron Microsoft's Bing Desktop server 
 
 ## Run-time system
 
-* Ubuntu-based Linux distribution
+* Ubuntu-based Linux distribution(I guess other Linux distributions will do)
 
 ## Requirements
 
