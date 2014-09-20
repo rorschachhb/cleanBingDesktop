@@ -4,7 +4,7 @@ This project downloads 9 latest wallpapers fron Microsoft's Bing Desktop server 
 
 ## Run-time system
 
-* Ubuntu-based Linux distribution(I guess other Linux distributions will do)
+* Ubuntu-based Linux distributions. (I guess other Linux distributions will do)
 
 ## Requirements
 
@@ -16,7 +16,7 @@ If you only want to do it once, simply run the script
 
 	./change_wallpaper.py
 
-If you want the script to automatically, use the cron daemon
+If you want the script to run automatically, use the cron daemon
 
 	crontab -e
 
