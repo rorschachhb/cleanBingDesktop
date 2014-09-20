@@ -14,7 +14,7 @@ This project downloads 9 latest wallpapers fron Microsoft's Bing Desktop server 
 
 ## How to run
 
-1. If you only want to do it once, simply run the script.
+If you only want to do it once, simply run the script.
 On Linux:
 
 	./change_wallpaper.py
@@ -23,7 +23,7 @@ On Windows:
 
 	python change_wallpaper.py
 
-2. If you want the script to run automatically on Linux, use the cron daemon.
+If you want the script to run automatically on Linux, use the cron daemon.
 
 	crontab -e
 
@@ -38,6 +38,6 @@ restart cron daemon.
 
 and the cript will check for latest wallpapers every two hours.
 
-3. If you want the script to run automatically on Windows, add the following command into Windows Task Scheduler.
+If you want the script to run automatically on Windows, add the following command into Windows Task Scheduler.
 
 	<absolute path for python>python.exe <absolute path for this project>\change_wallpaper.py
