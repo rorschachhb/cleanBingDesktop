@@ -1,16 +1,16 @@
-#cleanBingDesktop
+# cleanBingDesktop
 
 This project downloads 9 latest wallpapers fron Microsoft's Bing Desktop server and set the latest one as your desktop background.
 
-##Run-time system
+## Run-time system
 
 * Ubuntu-based Linux distribution
 
-##Requirements
+## Requirements
 
 * python 2.7
 
-##How to run
+## How to run
 
 If you only want to do it once, simply run the script
 
