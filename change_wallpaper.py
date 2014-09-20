@@ -53,7 +53,11 @@ def set_wallpaper(picpath):
 				win32gui.SystemParametersInfo(win32con.SPI_SETDESKWALLPAPER, picpath, 1+2)
 			win32api.RegCloseKey(k)
 		else:
-			os.system('DISPLAY=:0 gsettings set org.gnome.desktop.background picture-uri "%s"' % (picpath))
+			curpath = commands.getstatusoutput('gsettings get org.gnome.desktop.background picture-uri')[1][1:-1]
+			if curpath == picpath:
+				pass
+			else:
+				commands.getstatusoutput('DISPLAY=:0 gsettings set org.gnome.desktop.background picture-uri "%s"' % (picpath))
 
 
 picpath = download_picture()
