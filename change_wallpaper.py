@@ -8,7 +8,10 @@ import socket
 import sys
 import commands
 
-def download_picture(basedir):
+def download_picture():
+	basedir = op.join(op.abspath(op.dirname(__file__)), 'wallpapers')
+	if not op.exists(basedir):
+		os.mkdir(basedir)
 	validpath = ''
 	for i in range(8, -1, -1):
 		xmlurl = 'http://az517271.vo.msecnd.net/TodayImageService.svc/HPImageArchive?mkt=zh-cn&idx=%d' % (i)
@@ -53,11 +56,7 @@ def set_wallpaper(picpath):
 			os.system('DISPLAY=:0 gsettings set org.gnome.desktop.background picture-uri "%s"' % (picpath))
 
 
-if sys.platform == 'win32': #on windows
-	basedir = 'E:\photos\wallpapers'
-elif sys.platform == 'linux' or sys.platform == 'linux2': #on Linux
-	basedir = '/home/Bo/Pictures/Wallpapers'
-picpath = download_picture(basedir)
+picpath = download_picture()
 if picpath != '':
 	set_wallpaper(picpath)
 else:

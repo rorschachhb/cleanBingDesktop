@@ -40,6 +40,6 @@ and the cript will check for latest wallpapers every two hours.
 
 If you want the script to run automatically on Windows, add the following command into Windows Task Scheduler.
 
-	C:\Users\Bo\cleanbingdesktop\run.bat
+	<some absolute path>\run.bat
 
 and the script will run at the time you set.
