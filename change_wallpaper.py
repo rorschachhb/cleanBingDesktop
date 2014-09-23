@@ -30,7 +30,6 @@ def download_picture():
 			imgurl = root[6].text
 			try:
 				imgdata = urllib2.urlopen(imgurl, timeout = 2).read()
-				print len(imgdata)
 				if len(imgdata) < 100 * 1024:#if tunet not authorized
 					pass
 				else:
