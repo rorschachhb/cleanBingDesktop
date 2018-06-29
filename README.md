@@ -11,6 +11,7 @@ This project downloads wallpapers fron Microsoft's Bing Desktop server and set t
 
 * python 2.7
 * pywin32(for Windows)
+* appscript(for Mac)
 
 ## How to run
 
